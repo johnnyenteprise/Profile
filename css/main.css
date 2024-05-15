@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 5%;
+   
+}
+.main{
+    box-shadow: 2px 1px 3px 1px black;
+    display: flex;
+}
+img{
+    width: 100%;
+}
+a{
+    color: aqua;
+}
+.sidebar{
+    width: 30%;
+    border-right: 5px solid rgb(1, 1, 37);
+}
+.main-section{
+    width: 70%;
+}
+.card{
+    padding: 3% 4%;
+    font-size: 1rem;
+}
+.card h2{
+    background-color:  rgb(5, 112, 131);
+    color: white;
+    padding: 2% 4%;
+    margin-bottom: 4%;
+    font-size: 1.5rem;
+    text-transform: uppercase;    
+}
+.card ul {
+    line-height: 30px;
+}
+
+.title{
+    text-align: center;
+    padding: 3% 4%;
+    line-height: 28px;
+    background-color:  rgb(5, 112, 131);
+    color: white;
+}
+.title h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.main-cover{
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.duration{
+    width: 20%;
+}
+.info {
+    width: 80%;
+    line-height: 20px;
+}
+.info h4{
+    margin-bottom: 2%;
+}
+.info ul {
+    font-size: .9rem;
+}
+#hide-info{
+    display: none;
+}
+/* css media query */
+
+@media only screen and (max-width: 700px) {
+   
+
+    .main{
+        display: block;
+    }
+    .sidebar, .main-section{
+        width: 100%;
+    }
+    #hide-info{
+        display: inline-block;
+    }
+    .title{
+        display: none;
+    }
+}
